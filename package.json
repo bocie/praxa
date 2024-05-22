@@ -1,0 +1,26 @@
+{
+  "name": "praksa",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "none",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git init"
+  },
+  "keywords": [
+    "123"
+  ],
+  "author": "bocie",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.77.2"
+  },
+  "dependencies": {
+    "swiper": "^11.1.3"
+  }
+}
