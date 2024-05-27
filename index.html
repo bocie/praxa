@@ -18,23 +18,26 @@
 <link href="assets/css/main.scss" rel="stylesheet">
 <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
+
 	<!-- ======= Header ======= -->
 <header id="header" class="header">
 <div class="top">
-<div class="logopic"><img src="assets/img/logocskoa.png" alt="Image 1" class="logokep">
+<div class="logopic">
+	<img src="assets/img/logocskoa.png" alt="Image 1" class="logokep">
+	<button onclick="darkmode()">Toggle dark mode</button>
+</div>
 	<div class="languages">
 		<a href="#" class="srpski">Srpski</a>
 		<a href="#" class="langs">English</a>
-		<a href="#" class="langs">Magyar</a>	
+		<a href="#" class="magyar">Magyar</a>	
 	</div>
-</div>
+
 </div>
            
 </a>
     <div class="bottomnav">
 		<ul class="navul">
-			<li><a class="active" href="#home">O NAMA<div class="lidown">vizija za uspeh</div></a></li>
+			<li><a href="#home">O NAMA<div class="lidown">vizija za uspeh</div></a></li>
 			<li><a href="#news">DVG PROIZVODI<div class="lidown">naši proizvodi</div></a></li>
 			<li><a href="#contact" class="atszin">BRENDOVI<div class="lidown">koje zasupamo</div></a></li>
 			<li><a href="#contact">DISTRIBUCIJA<div class="lidown">logistika i operativa</div></a></li>
@@ -44,6 +47,7 @@
 		  </ul>  
     </div>
 </header>
+<body>
 		
 		<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade"
     navigation="true">
@@ -63,23 +67,27 @@
 
 		<section id="features" class="features">
 			<div class="container">
+				<div class="szakadok">
 						<img src="assets/img/features-3.jpg" class="new-img" alt="">
-					
-					
+				</div>	
 						<div class="kepmellett">
-							<div class="dvgcomp">DVG Company</div>
-						<div class="hrtwo"><hr class="new2"/></div>
-						<div class="velep">Veleprodaja i maloprodaja kozmetike i kućne hemije</div>
-						<div class="hrtwo"><hr class="new1"/></div>
-						<div class="velepsz"> DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici.
+							<div class="szoveg">
+							<p class="dvgcomp">DVG Company</p>
+						<hr class="new2"/>
+						<p class="velep">Veleprodaja i maloprodaja kozmetike i kućne hemije</p>
+						<hr class="new1"/>
+						<p class="velepsz"> DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici.
 						Prvenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije.
 						U potpunosti je u privatnom vlasništvu, sa sedištem u Subotici. 
 						Tu se nalazi distrubutivni centar i poslovne prostorije, sa ukupno 3000m2 
-						magacinskog prostora koji zadovoljava sve segmente u pogledu smeštaja, 
+						magacinskog prostora koji zadovoljava sve segmente u pogledu smeštaja,
 						čuvanja i plasiranja robe.
-					</div>
+						
+						</p>
+					<div>
 					<button class="button button3"><div class="buttondiv">Saznajte više o nama</div></button>
-							
+				</div>	
+			</div>	
 
 					</div>
 					</div>
@@ -99,105 +107,102 @@
 		</section>
 
 		<section id="service">
-			<div class="container">
+			<div class="container2">
 				
 						<div class="card">
 							<div class="card-img">
 								<img src="assets/img/trucking-service.jpg" alt="" class="three-img">
 								
 							</div>
-							<p class="card-items">POSTANITE NAS PARTNER</p>
+							<div class="card-items">POSTANITE NAS PARTNER</div>
 							<hr class="new3">
-							</div>					
+						</div>				
 						<div class="card">
 							<div class="card-img">
 								<img src="assets/img/packaging-service.jpg" alt="" class="three-img">
 							</div>
-							<p class="card-items">NASI PROIZVODI</p>
+							<div class="card-items">NASI PROIZVODI</div>
 							<hr class="new3">
 							</div>
 						<div class="card">
 							<div class="card-img">
 								<img src="assets/img/warehousing-service.jpg" alt="" class="three-img">
 							</div>
-							<p class="card-items">UVOZ IZ MADARSKE</p>
+							<div class="card-items">UVOZ IZ MADARSKE</div>
 							<hr class="new3">
 							</div>
 					</div>
 					</div>
 					<div class="section-header">
-					<p class="dvgnegy">DVG Company</p>
-					<p class="dvgbroj">u brojkama</p>
+					<div class="dvgnegy">DVG Company</div>
+					<div class="dvgbroj">u brojkama</div>
 					<hr class="new4">
 				</div>				
 				</div>
 			</div>
 		</section>
 
-	<section id="hero" class="magacin">			
-				</div>
-					<div>
-							<div>
+	<section id="hero" class="magacin">		
+		<div class="redblock">	
+			
+							<div class="prostor">
 								<span>3.000m²</span>
-								<p>Magacinskog prostora</p>
+								<p class="prostordown">Magacinskog prostora</p>
 							</div>
-						</div>
-						<div>
-							<div>
+			
+							<div class="prostor">
 								<span>20</span>
-								<p>Vozila</p>
+								<p class="prostordown">Vozila</p>
 							</div>
-						</div>
-						
-
-						<div>
-							<div>
+							<div class="prostor">
 								<span>8</span>
-								<p>Komercijalista</p>
+								<p class="prostordown">Komercijalista</p>
 							</div>
-						</div>
-
-						<div>
+							<div class="prostor">
+								<span>170</span>
+								<p class="prostordown">Brendova</p>
+							</div>
 						
-						<div>
-						<span>170</span>
-								<p>Brendova</p>
-							</div>
-							
-						</div>
 			</div>
-		</div>
 	</section>
 	<div class="nasiproizvodi">
 	</div>
 
 </div> 
+<div class="behindimg">
+	
+	<img src="assets/img/backer.png" alt="backer" class="backer">
+	<div class="haot">Nasi proizvodi</div>
+	<hr class="new5">
+	<div class="proizvodi">Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela.
+		 Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</div>
 <div class="lastswiper">
-		<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" 
+		<swiper-container id="mukodj" class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" 
     slides-per-view="5">
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kese.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kuhinju.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/papir.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kozmetika.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kante.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kese.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kuhinju.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/papir.png" alt="Image 1"></swiper-slide>
-    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kozmetika.png" alt="Image 1"></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kese.png" alt="Image 1"><div class="swiperdown">KESE I FOLIJE</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kuhinju.png" alt="Image 1"><div class="swiperdown">ZA KUHINJU</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/papir.png" alt="Image 1"><div class="swiperdown">UBRUSI I TOALET PAPIRI</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kozmetika.png" alt="Image 1"><div class="swiperdown">KOZMETIKA</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kante.png" alt="Image 1"><div class="swiperdown">PLASTICNE KANTE</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kese.png" alt="Image 1"><div class="swiperdown">KESE I FOLIJE</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kuhinju.png" alt="Image 1"><div class="swiperdown">ZA KUHINJU</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/papir.png" alt="Image 1"><div class="swiperdown">UBRUSI I TOALET PAPIRI</div></swiper-slide>
+    <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kozmetika.png" alt="Image 1"><div class="swiperdown">KOZMETIKA</div></swiper-slide>
   </swiper-container>
 </div>
+</div>
 		<div class="hrotdiv">
-			<h5 class="haot">Istaknuti brendovi za koje radimo distribuciju</h5>
+			<div class="haot">Istaknuti brendovi za koje radimo distribuciju</div>
 		<hr class="new5">
 		</div>
 		<section>
-		<div class="container">
-        <div class="item"><img src="assets/img/dove.jpg" alt="Image 1"></div>	
-        <div class="item"><img src="assets/img/nivea.png" alt="Image 2"></div>
-        <div class="item"><img src="assets/img/palmolive.jpg" alt="Image 3"></div>
-        <div class="item"><img src="assets/img/vanish.png" alt="Image 4"></div>
-        <div class="item"><img src="assets/img/ajax.png" alt="Image 5"></div>
-        <div class="item"><img src="assets/img/cif.png" alt="Image 6"></div>
+		<div class="imagesbottom">
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-04.png" alt="Image 1"><div class="centerbrand">Dove</div></div></div>
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-03.png" alt="Image 2"><div class="centerbrand">Nivea</div></div></div>
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-05.png" alt="Image 3"><div class="centerbrand">Palmolive</div></div></div>
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-01.png" alt="Image 4"><div class="centerbrand">Vanish</div></div></div>
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-02.png" alt="Image 5"><div class="centerbrand">Ajax</div></div></div>
+        <div class="bottomitems"><div class="item"><img src="assets/img/logoi-06.png" alt="Image 6"><div class="centerbrand">Cif</div></div></div>
     </div>
 
 		</section>
@@ -212,33 +217,13 @@
 
 	<!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-    <div class="container">
     <div class="main-container">
             <div class="image-container">
             <img src="assets/img/dvglogo.png" alt="" class="navbar-photo">
-            </div>
-            <div class="text-container">
-                <h4>DVG COMPANY</h4>
-                <p>Čantavirski put bb
-    24000 Subotica, Srbija
-    +381 24 568 555
-    office@dvgcomapny.comdsa</p>
-            </div>
-            <div class="text-container">
-                <p>O NAMA</p>
-                <p>DVG PROIZVODI</p>
-                <p>BRENDOVI</p>
-                <p>DISTRIBUCIJA</p>
-                <p>SARADNJA</p>
-                <p>NOVOSTI</p>
-                <p>KONTAKT</p>
-    
-            </div>
-            <div class="text-container">
-                <p>Pratite nas:</p>
-            </div>
-        </div>
-	</div>
+			</div>
+		</div>
+	
+             
 </footer>
     <!-- End Footer -->
 	<div id="preloader"></div>
