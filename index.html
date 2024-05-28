@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+	
 <head>
 	<title>Praksa</title>
 	<meta name="viewport"
@@ -10,59 +11,66 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/css/main.scss" rel="stylesheet">
 <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-
-	<!-- ======= Header ======= -->
-<header id="header" class="header">
-<div class="top">
-<div class="logopic">
-	<img src="assets/img/logocskoa.png" alt="Image 1" class="logokep">
-	<button onclick="darkmode()">Toggle dark mode</button>
-</div>
-	<div class="languages">
-		<a href="#" class="srpski">Srpski</a>
-		<a href="#" class="langs">English</a>
-		<a href="#" class="magyar">Magyar</a>	
+<div id="popup" class="popup">
+	<div class="popup-content">
+		<span id="close-popup" class="close">&times;</span>
+		<p>Click on the X, or click on the Close button to continue scrolling.</p>
+		<button id="popup-button">Close</button>
 	</div>
-
 </div>
-           
-</a>
-    <div class="bottomnav">
-		<ul class="navul">
-			<li><a href="#home">O NAMA<div class="lidown">vizija za uspeh</div></a></li>
-			<li><a href="#news">DVG PROIZVODI<div class="lidown">naši proizvodi</div></a></li>
-			<li><a href="#contact" class="atszin">BRENDOVI<div class="lidown">koje zasupamo</div></a></li>
-			<li><a href="#contact">DISTRIBUCIJA<div class="lidown">logistika i operativa</div></a></li>
-			<li><a href="#contact">SARADNJA<div class="lidown">proširenje ponude</div></a></li>
-			<li><a href="#contact">NOVOSTI<div class="lidown">aktuelnosti</div></a></li>
-			<li><a href="#contact">KONTAKT<div class="lidown">kontaktirajte nas</div></a></li>		
-		  </ul>  
-    </div>
-</header>
+	<!-- ======= Header ======= -->
+	<header id="header" class="header">
+        <div class="top">
+            <div class="logopic">
+                <img src="assets/img/logocskoa.png" alt="Image 1" class="logokep">
+				<button onclick="toggleDarkMode()">Toggle dark mode</button>
+            </div>
+            <div class="languages">
+                <a href="#" class="srpski">Srpski</a>
+                <a href="#" class="langs">English</a>
+                <a href="#" class="magyar">Magyar</a>
+            </div>
+        </div>
+        <div class="bottomnav">
+            <div class="bottomnav">
+				<div class="hamburger" onclick="toggleMenu()">
+					&#9776;
+				</div>
+            <ul class="navul">
+                <li><a href="#home">O NAMA<div class="lidown">vizija za uspeh</div></a></li>
+                <li><a href="#news">DVG PROIZVODI<div class="lidown">naši proizvodi</div></a></li>
+                <li><a href="#contact" class="atszin">BRENDOVI<div class="lidown">koje zasupamo</div></a></li>
+                <li><a href="#contact">DISTRIBUCIJA<div class="lidown">logistika i operativa</div></a></li>
+                <li><a href="#contact">SARADNJA<div class="lidown">proširenje ponude</div></a></li>
+                <li><a href="#contact">NOVOSTI<div class="lidown">aktuelnosti</div></a></li>
+                <li><a href="#contact">KONTAKT<div class="lidown">kontaktirajte nas</div></a></li>
+            </ul>
+        </div>
+    </header>
 <body>
-		
+	
 		<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade"
     navigation="true">
     <swiper-slide>
 	<img src="assets/img/swiperdvg.png" alt="Image 1">
     </swiper-slide>
     <swiper-slide>
-      <img alt ="kep" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      <img alt ="kep" src="assets/img/features-3.jpg" />
     </swiper-slide>
     <swiper-slide>
-      <img alt ="kep" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      <img alt ="kep" src="assets/img/swiperdvg.png" />
     </swiper-slide>
     <swiper-slide>
-      <img alt ="kep" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      <img alt ="kep" src="assets/img/features-3.jpg" />
     </swiper-slide>
   </swiper-container>
 
@@ -178,7 +186,7 @@
 	<div class="proizvodi">Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela.
 		 Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</div>
 <div class="lastswiper">
-		<swiper-container id="mukodj" class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" 
+		<swiper-container id="mukodj" class="mySwiper" pagination="true" pagination-clickable="true"	 
     slides-per-view="5">
     <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kese.png" alt="Image 1"><div class="swiperdown">KESE I FOLIJE</div></swiper-slide>
     <swiper-slide class="slideheight"><img class="kicsi"src="assets/img/testimonials/kuhinju.png" alt="Image 1"><div class="swiperdown">ZA KUHINJU</div></swiper-slide>
@@ -196,7 +204,7 @@
 			<div class="haot">Istaknuti brendovi za koje radimo distribuciju</div>
 		<hr class="new5">
 		</div>
-		<section>
+		
 		<div class="imagesbottom">
         <div class="bottomitems"><div class="item"><img src="assets/img/logoi-04.png" alt="Image 1"><div class="centerbrand">Dove</div></div></div>
         <div class="bottomitems"><div class="item"><img src="assets/img/logoi-03.png" alt="Image 2"><div class="centerbrand">Nivea</div></div></div>
@@ -206,7 +214,7 @@
         <div class="bottomitems"><div class="item"><img src="assets/img/logoi-06.png" alt="Image 6"><div class="centerbrand">Cif</div></div></div>
     </div>
 
-		</section>
+		
 		<section>
 <div class="buttonclass">
 	<div class="center">
@@ -218,11 +226,51 @@
 
 	<!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-    <div class="main-container">
-            <div class="image-container">
-            <img src="assets/img/dvglogo.png" alt="" class="navbar-photo">
+    
+            
+			<div class="footerdiv">	
+				<div class="dvglogodown">
+				<img src="assets/img/dvglogo.png" alt="">
 			</div>
-		</div>
+				<div class="footersplit">
+					<h3>D.V.G. COMPANY</h3>
+				<div class="footerlittle">
+					<div class="midle">
+					<p class="hider"><img src="assets/img/hely.png" alt="">Čantavirski put bb
+						<p class="hide">24000 Subotica, Srbija</p></p>
+					</div>
+					<p><img src="assets/img/phone.png" alt=""><a href class="downlinks">+381 24 568 555</a></p>
+					<p><img src="assets/img/mail.png" alt=""><a href class="downlinks">office@dvgcomapny.com</a></p>
+				
+				</div>
+				</div>
+
+				<div class="lentsplit">
+					<p class="lent"><a href="#contact" class="atszinlent">O NAMA</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">DVG PROIZVODI</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">BRENDOVI</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">DISTRIBUCIJA</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">SARADNJA</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">NOVOSTI</a></p>
+					<p class="lent"><a href="#contact" class="atszinlent">KONKTAKT</a></p>
+				</div>
+				<div class="lentsplit">
+					<p class="pratnas">Pratite nas:</p>
+					<div class="ped">
+						<a href="#contact" class="atszinlent"><img src="assets/img/fb.png" alt=""></a>
+						<a href="#contact" class="atszinlent"><img src="assets/img/x.png" alt=""></a>
+						<a href="#contact" class="atszinlent"><img src="assets/img/yt.png" alt=""></a>
+						<a href="#contact" class="atszinlent"><img src="assets/img/mess.png" alt=""></a>
+					</div>
+				</div>		
+</div>
+
+<div class="lastfoot">
+	<div class="lastfootdivs">Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava zadržana.</div>
+	<div class="lastfootdivstwo"><a href class="lastlinks">Privatnost podatka</a></div>
+	<div class="lastfootdivsthree"><a href class="lastlinks">Uslovi korišćenja</a></div>
+	<div class="lastfootdivs">Powered by: <a href class="lastlinks">StudioPresent</a></div>
+</div>
 	
              
 </footer>
@@ -240,6 +288,5 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/jobSearch.js"></script>
 </body>
 </html>
