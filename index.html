@@ -5,7 +5,7 @@
 <head>
 	<title>Praksa</title>
 	<meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, initial-scale=1">
           <meta charset="utf-8">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
 
 </head>
 
+
 <div id="popup" class="popup">
 	<div class="popup-content">
 		<span id="close-popup" class="close">&times;</span>
@@ -27,12 +28,28 @@
 		<button id="popup-button">Close</button>
 	</div>
 </div>
+
 	<!-- ======= Header ======= -->
 	<header id="header" class="header">
+		<div class="topnavig" id="myTopnavig">
+			<a href="#">O NAMA</a>
+			<a href="#">DVG PROIZVODI</a>
+			<a href="#">BRENDOVI</a>
+			<a href="#">DISTRIBUCIJA</a>
+			<a href="#">SARADNJA</a>
+			<a href="#">NOVOSTI</a>
+			<a href="#">KONTAKT</a>
+			<a href="javascript:void(0);" class="icon" onclick="Hamburgermenu()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		  </div>
+		
         <div class="top">
+			
             <div class="logopic">
                 <img src="assets/img/logocskoa.png" alt="Image 1" class="logokep">
-				<button onclick="toggleDarkMode()">Toggle dark mode</button>
+				<button class="darkmodebttn" onclick="toggleDarkMode()">Toggle dark mode</button>
+				
             </div>
             <div class="languages">
                 <a href="#" class="srpski">Srpski</a>
@@ -40,12 +57,11 @@
                 <a href="#" class="magyar">Magyar</a>
             </div>
         </div>
-        <div class="bottomnav">
+		
             <div class="bottomnav">
-				<div class="hamburger" onclick="toggleMenu()">
-					&#9776;
-				</div>
+				
             <ul class="navul">
+				
                 <li><a href="#home">O NAMA<div class="lidown">vizija za uspeh</div></a></li>
                 <li><a href="#news">DVG PROIZVODI<div class="lidown">naši proizvodi</div></a></li>
                 <li><a href="#contact" class="atszin">BRENDOVI<div class="lidown">koje zasupamo</div></a></li>
@@ -54,7 +70,8 @@
                 <li><a href="#contact">NOVOSTI<div class="lidown">aktuelnosti</div></a></li>
                 <li><a href="#contact">KONTAKT<div class="lidown">kontaktirajte nas</div></a></li>
             </ul>
-        </div>
+        	</div>
+		
     </header>
 <body>
 	
@@ -155,21 +172,21 @@
 		<div class="redblock">	
 			
 							<div class="prostor">
-								<span>3.000m²</span>
+								<span>3.000<span class="meter">m²</span></span>
 								<p class="prostordown">Magacinskog prostora</p>
 							</div>
 			
 							<div class="prostor">
 								<span>20</span>
-								<p class="prostordown">Vozila</p>
+								<p class="prostordowntwo">Vozila</p>
 							</div>
 							<div class="prostor">
 								<span>8</span>
-								<p class="prostordown">Komercijalista</p>
+								<p class="prostordowntwo">Komercijalista</p>
 							</div>
 							<div class="prostor">
 								<span>170</span>
-								<p class="prostordown">Brendova</p>
+								<p class="prostordowntwo">Brendova</p>
 							</div>
 						
 			</div>
@@ -178,8 +195,7 @@
 	</div>
 
 </div> 
-<div class="behindimg">
-	
+<div class="special-element">
 	<img src="assets/img/backer.png" alt="backer" class="backer">
 	<div class="haot">Nasi proizvodi</div>
 	<hr class="new5">
@@ -275,7 +291,7 @@
              
 </footer>
     <!-- End Footer -->
-	<div id="preloader"></div>
+	
 
 	<!-- Vendor JS Files -->
 	
